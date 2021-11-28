@@ -1,0 +1,110 @@
+.hero-section {
+  background-image: url("./../assets/Images/hero.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  height: 30vh;
+  min-height: 350px;
+  width: 100%;
+  background-size: cover;
+}
+
+.hero-typography {
+  color: #ffffff;
+  background-color: #152d35;
+  height: 20vh;
+  min-height: 160px;
+  width: 100%;
+}
+
+.hero-text {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 0.9rem;
+  letter-spacing: 0.2px;
+  word-spacing: 1.5px;
+}
+.services-section-heading {
+  text-align: center;
+  color: #2e30c2;
+  font-weight: 800;
+  font-family: "Roboto", sans-serif;
+  padding-bottom: 0.5rem;
+  font-size: 1.9rem;
+  border-bottom: 3px solid green;
+  width: max-content;
+
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+
+  margin: 0 auto;
+}
+
+.card {
+  height: 300px;
+  width: 32% !important;
+}
+
+.card:hover {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  cursor: pointer;
+}
+
+.card-heading {
+  font-size: 1.2rem;
+  color: #212121;
+  font-weight: 600;
+  font-family: "Roboto", "sans-serif";
+}
+
+.card-description {
+  font-size: 0.87rem;
+  color: #212121;
+  font-weight: 400;
+  font-family: "Roboto", "sans-serif";
+}
+
+/* Decorations */
+
+.gutter .row > div {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  min-height: 80px;
+  padding: 4px 0 0 8px;
+}
+@media (min-width: 992px) {
+  .gutter .row {
+    margin: 8px 0;
+  }
+}
+
+.contact-heading {
+    font-size: 1.8rem;
+    color: #212121;
+    font-weight: 600;
+    font-family: "Roboto", 'sans-serif';
+}
+
+.contact-us-img {
+  background-image: url("./../assets/Images/contact-us.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: auto;
+  min-height: 400px;
+  width: 100%;
+}
+
+footer {
+    margin-top: 10px;
+    background-color: #212121;
+    color: #ffffff;
+}
