@@ -184,8 +184,8 @@
           <span class="error">* <?php echo $emailErr; ?></span>
           <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
         </div>
-        
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <input type="submit" class="btn btn-primary" name="submit" value="Submit">
+       
       </form>
       
 
@@ -231,6 +231,21 @@
       } else {
           $mobile = test_input($_POST['mobile']);
       }
+
+      $to = 'nainashah1998@gmail.com, test@example.com';
+      $subject = 'These are contact details';
+
+      $msg = $fullname + $mobile + $email;
+
+      $msg = wordwrap($msg, 70);
+
+      $headers = 'MIME-Version: 1.0' . "\r\n";
+      $headers .= 'Content-type:text/html;charset=UTF-8' . "\r\n";
+
+      $headers .= 'From: <nainashah1998@gmail.com>' . "\r\n";
+      $headers .= 'Cc: westernglobal@int.com' . "\r\n";
+
+      mail($to, $subject, $message, $headers);
   }
 
   function test_input($data)
